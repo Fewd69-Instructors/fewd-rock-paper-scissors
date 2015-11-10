@@ -47,6 +47,10 @@ button:active {
   padding: 0 20px;
 }
 
-#status {
+#status, #results {
   margin-top: 20px;
+}
+
+.userChoice{
+  text-decoration: underline;
 }
