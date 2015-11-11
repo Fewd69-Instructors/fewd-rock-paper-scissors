@@ -7,7 +7,7 @@ body {
   margin: 3em;
 }
 
-strong {
+span {
   text-decoration: underline;
 }
 
@@ -50,3 +50,8 @@ button:active {
 #status {
   margin-top: 20px;
 }
+
+#result {
+  text-decoration:none;
+}
+
