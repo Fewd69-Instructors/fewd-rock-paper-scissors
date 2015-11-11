@@ -1,0 +1,50 @@
+//
+
+keep track of score
+score starts at 0-0 
+
+user play
+bot play
+
+
+if user clicks on rock 
+the bot will randomly select a value
+if the random value is rock
+then game tied
+
+if the random value is paper
+bot wins (function)
+
+if the random value is scissors
+user wins (function)
+
+if user clicks on paper 
+the bot will randomly select a value
+if the random value is rock
+user wins
+
+if the random value is paper
+game tied
+
+if the random value is scissors
+bot wins
+
+if user clicks on scissors
+the bot will randomly select a value
+if the random value is rock
+bot wins
+
+if the random value is paper
+user wins
+
+if the random value is scissors
+game tied 
+
+repeating actions:
+if user play = bot play then game is tied
+bot will randomly select a value
+bot wins
+user wins
+game tied
+
+
