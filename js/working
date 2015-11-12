@@ -14,17 +14,16 @@ $("#scissors").click(scissorsmove);
 
 function rockmove() {
   var botChoice = options[Math.floor(options.length * Math.random())];
-  //alert(botChoice)
+  alert(botChoice)
  
   if (botChoice === "scissors") {
     humanScore = humanScore + 1;
 
     $("#humanScore").text(humanScore);
-    $("#whoWon").text("You won!")
+    console.log("human won");
 
     $("#you").text("You chose rock");
     $("#bot").text("and the bot chose " + (botChoice) + ".");
-
 
   } 
 
@@ -32,90 +31,52 @@ function rockmove() {
     botScore = botScore + 1;
 
     $("#computerScore").text(botScore);
-    $("#whoWon").text("You lost!")
-
-    $("#you").text("You chose rock");
-    $("#bot").text("and the bot chose " + (botChoice) + ".");
-
-  }
-
-  else {
-  
-    $("#whoWon").text("It's a tie!")
-    $("#you").text("You chose rock");
-    $("#bot").text("and the bot chose " + (botChoice) + ".");
+      console.log("computer won");
   }
 
 }
 
 function papermove() {
   var botChoice = options[Math.floor(options.length * Math.random())];
-  //alert(botChoice)
+  alert(botChoice)
  
   if (botChoice === "scissors") {
     botScore = botScore + 1;
 
     $("#computerScore").text(botScore);
-    $("#whoWon").text("You lost!")
+    console.log("computer won");
 
-    $("#you").text("You chose paper");
-    $("#bot").text("and the bot chose " + (botChoice) + ".");
-
-
-
+    
   } 
 
   else if (botChoice === "rock") {
     humanScore = humanScore + 1;
 
     $("#humanScore").text(humanScore);
-        $("#whoWon").text("You won!")
-
-    $("#you").text("You chose rock");
-    $("#bot").text("and the bot chose " + (botChoice) + ".");
-
-
+      console.log("human won");
   }
 
-    else {
-  
-    $("#whoWon").text("It's a tie!")
-    $("#you").text("You chose paper");
-    $("#bot").text("and the bot chose " + (botChoice) + ".");
-  }
 }
 
 
 function scissorsmove() {
   var botChoice = options[Math.floor(options.length * Math.random())];
-  //alert(botChoice)
+  alert(botChoice)
  
   if (botChoice === "rock") {
     botScore = botScore + 1;
 
     $("#computerScore").text(botScore);
-    $("#whoWon").text("You lost!")
-
-    $("#you").text("You chose scissors");
-    $("#bot").text("and the bot chose " + (botChoice) + ".");
+    console.log("computer won");
   } 
 
   else if (botChoice === "paper") {
     humanScore = humanScore + 1;
 
     $("#humanScore").text(humanScore);
-    $("#whoWon").text("You won!")
-
-    $("#you").text("You chose scissors");
-    $("#bot").text("and the bot chose " + (botChoice) + ".");
+      console.log("human won");
   }
 
-  else {
-  
-    $("#whoWon").text("It's a tie!")
-    $("#you").text("You chose scissors");
-    $("#bot").text("and the bot chose " + (botChoice) + ".");
-  }
 }
 
 
